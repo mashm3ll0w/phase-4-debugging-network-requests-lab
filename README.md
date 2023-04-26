@@ -71,6 +71,8 @@ developing your own process.
   - How I debugged:
   - ON changing the number of likes, I was getting a `caught (in promise) SyntaxError: Unexpected end of JSON input` error, which indicated that the frontend was expecting a JSON response and the backedn was sending none.
   - Adding a json response to the backend solved the issue.
+
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  - I was getting a `500 Server Error` and upon cheking the routes, I found that the route `destroy` was not in the routes. Adding the route fixed the issue.
