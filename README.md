@@ -63,6 +63,8 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  - Checking the logs and dev tools showed that I had an uninitialized constant Toys, so following that in the toys_controller, I found that I was creating a new toy by calling the `Toys` model instead of the `Toy` model.
+  - Removing the `s` from `Toys` fixed the error.
 
 - Update the number of likes for a toy
 
